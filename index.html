@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>    
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <div id="main">
+        <div id="navbar-wrapper">
+            <nav id="navbar">
+                <header>
+                    <h1>Python Documentation</h1>
+                </header>
+                <ul>
+                    <!--Generated with javascript-->
+                </ul>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+                <div class="content">
+                    <p>Python is a powerful programming language ideal for scripting and rapid application development. It is used in web development (like: Django and Bottle), scientific and mathematical computing (Orange, SymPy, NumPy) to desktop graphical user Interfaces (Pygame, Panda3D).</p>
+                    <p>This tutorial introduces you to the basic concepts and features of Python 3. After reading the tutorial, you will be able to read and write basic Python programs, and explore Python in depth on your own.</p>
+                    <p>This tutorial is intended for people who have knowledge of other programming languages and want to get started with Python quickly.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="hello-world_program">
+                <header>
+                    <h2>Hello-World Program</h2>
+                </header>
+                <div class="content">
+                    <code>print("Hello, World!")</code>
+                    <p>When you run the program, the output will be:</p>
+                    <p class="output">Hello, World!</p>
+                    <p>In this program, we have used the built-in <span>print()</span> function to print <span>Hello, world!</span> string.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="variables_and_literals">
+                <header>
+                    <h2>Variables and Literals</h2>
+                </header>
+                <div class="content">
+                    <p>A variable is a named location used to store data in the memory. Here's an example:</p>
+                    <code>a = 5</code>
+                    <p>Here, <span>a</span> is a variable. We have assigned 5 to variable <span>a</span></p>
+                    <p>We do not need to define variable type in Python. You can do something like this:</p>
+                    <code>a = 5 
+                        print("a =", 5)
+                        a = "High five" 
+                        print("a =", a) 
+                    </code>
+                    <p>Initially, integer value <span>5</span> is assigned to the variable <span>a</span>. Then, the string <span>High five</span> is assigned to the same variable.</p>
+                    <p>By the way, <span>5</span> is a numeric literal and <span>"High five"</span> is a string literal.</p>
+                    <p>When you run the program, the output will be:</p>
+                    <p class="output">a = 5
+                        a = High five
+                    </p>
+                </div>
+            </section>
+
+            <section class="main-section" id="operators">
+                <header>
+                    <h2>Operators</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        Operators are special symbols that carry out operations on operands (variables and values).
+                    </p>
+                    <p>
+                        Let's talk about arithmetic and assignment operators in this part.
+                    </p>
+                    <p>
+                        Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication etc.
+                    </p>
+                    <code>x = 14
+                        y = 4
+                        
+                        # Add two operands
+                        print('x + y =', x+y) # Output: x + y = 18
+                        
+                        # Subtract right operand from the left
+                        print('x - y =', x-y) # Output: x - y = 10
+                        
+                        # Multiply two operands
+                        print('x * y =', x*y) # Output: x * y = 56
+                        
+                        # Divide left operand by the right one 
+                        print('x / y =', x/y) # Output: x / y = 3.5
+                        
+                        # Floor division (quotient)
+                        print('x // y =', x//y) # Output: x // y = 3
+                        
+                        # Remainder of the division of left operand by the right
+                        print('x % y =', x%y) # Output: x % y = 2
+                        
+                        # Left operand raised to the power of right (x^y)
+                        print('x ** y =', x**y) # Output: x ** y = 38416
+                    </code>
+                    <p>Assignment operators are used to assign values to variables. You have already seen the use of <span>=</span> operator. Let's try some more assignment operators.</p>
+                    <code>x = 5
+
+                        # x += 5 ----> x = x + 5
+                        x +=5
+                        print(x) # Output: 10
+                        
+                        # x /= 5 ----> x = x / 5
+                        x /= 5
+                        print(x) # Output: 2.0
+                    </code>
+                    <p>Other commonly used assignment operators: <span>-=</span>, <span>*=</span>, <span>%=</span>, <span>//=</span> and <span>**=</span>.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="get_input_from_user">
+                <header>
+                    <h2>Get Input from User</h2>
+                </header>
+                <div class="content">
+                    <p>In Python, you can use <span>input()</span> function to take input from user. For example:</p>
+                    <code>inputString = input('Enter a sentence:')
+                        print('The inputted string is:', inputString)
+                    </code>
+                    <p>When you run the program, the output will be:</p>
+                    <p class="output">Enter a sentence: Hello there.
+                        The inputted string is: Hello there. 
+                    </p>
+                </div>
+            </section>
+
+            <section class="main-section" id="python_comments">
+                <header>
+                    <h2>Python Comments</h2>
+                </header>
+                <div class="content">
+                    <p>There are 3 ways of creating comments in Python.</p>
+                    <code># This is a comment</code>
+
+                    <code>
+                        """This is a 
+                        multiline
+                        comment."""
+                    </code>
+
+                    <code>
+                        '''This is also a
+                        multiline
+                        comment.'''
+                    </code>
+                </div>
+            </section>
+
+            <section class="main-section" id="type_conversion">
+                <header>
+                    <h2>Type Conversion</h2>
+                </header>
+                <div class="content">
+                    <p>The process of converting the value of one data type (integer, string, float, etc.) to another is called type conversion. Python has two types of type conversion.
+                    </p>
+                    <ul>
+                        <li>Implicit Type Conversion</li>
+                        <li>Explicit Conversion</li>
+                    </ul>
+
+                    <h3>Implicit Type Conversion</h3>
+                    <p>Implicit conversion doesn't need any user involvement. For example:</p>
+                    <code>num_int = 123  # integer type
+                        num_flo = 1.23 # float type
+                        
+                        num_new = num_int + num_flo
+                        
+                        print("Value of num_new:",num_new)
+                        print("datatype of num_new:",type(num_new))
+                    </code>
+                    <p>When you run the program, the output will be:</p>
+                    <p class="output">Value of num_new: 124.23
+                        datatype of num_new: datatype of num_new: &lt;class 'float'>
+                    </p>
+                    <p>
+                        Here, <span>num_new</span> has float data type because Python always converts smaller data type to larger data type to avoid the loss of data.
+                    </p>
+                    <p>Here is an example where Python interpreter cannot implicitly type convert.</p>
+                    <code>num_int = 123     # int type
+                        num_str = "456"   # str type
+                        
+                        print(num_int+num_str)
+                    </code>
+                    <p>When you run the program, you will get</p>
+                    <p class="output">TypeError: unsupported operand type(s) for +: 'int' and 'str'</p>
+                    <p>However, Python has a solution for this type of situation which is know as explicit conversion.</p>
+                    
+                    <h3>Explicit Conversion</h3>
+                    <p>In case of explicit conversion, you convert the datatype of an object to the required data type. We use predefined functions like <span>int()</span>, <span>float()</span>, <span>str()</span> etc. to perform explicit type conversion. For example:</p>
+                    <code>num_int = 123  # int type
+                        num_str = "456" # str type
+                        
+                        # explicitly converted to int type
+                        num_str = int(num_str) 
+                        
+                        print(num_int+num_str)</code>
+                </div>
+            </section>
+
+            <section class="main-section" id="python_numeric_types">
+                <header>
+                    <h2>Python Numeric Types</h2>
+                </header>
+                <div class="content">
+                    <p>Python supports the following numberic types:</p>
+                    <ul>
+                        <li>Integers</li>
+                        <li>Floating point numbers</li>
+                        <li>Complex numbers</li>
+                    </ul>
+                    <p>They are defined as <span>int</span>, <span>float</span> and <span>complex</span> class in Python. In addition to that, booleans: <span>True</span> and <span>False</span> are a subtype of integers.</p>
+                    <code># Output: &lt;class 'int'&gt;
+                        print(type(5))
+                        
+                        # Output: &lt;class 'float'&gt;
+                        print(type(5.0))
+                        
+                        c = 5 + 3j
+                        
+                        # Output: &lt;class 'complex'&gt;
+                        print(type(c))
+                    </code>
+                </div>
+            </section>
+
+            <section class="main-section" id="string">
+                <header>
+                    <h2>String</h2>
+                </header>
+                <div class="content">
+                    <p>A string is a sequence of characters. Here are different ways to create a string.</p>
+                    <code># all of the following are equivalent
+                        my_string = 'Hello'
+                        print(my_string)
+                        
+                        my_string = "Hello"
+                        print(my_string)
+                        
+                        my_string = '''Hello'''
+                        print(my_string)
+                        
+                        # triple quotes string can extend multiple lines
+                        my_string = """Hello, welcome to
+                                   the world of Python"""
+                        print(my_string)
+                    </code>
+                    <p>You can access individual characters of a string using indexing (in a similar manner like lists and tuples).</p>
+                    <code>str = 'programiz'
+                        print('str = ', str)
+                        
+                        print('str[0] = ', str[0]) # Output: p
+                        
+                        print('str[-1] = ', str[-1]) # Output: z
+                        
+                        #slicing 2nd to 5th character
+                        print('str[1:5] = ', str[1:5]) # Output: rogr
+                        
+                        #slicing 6th to 2nd last character
+                        print('str[5:-2] = ', str[5:-2]) # Output: am
+                    </code>
+                    <p>Strings are immutable. You cannot change elements of a string once it is assigned. However, you can assign one string to another. Also, you can delete the string using <span>del</span> operator.</p>
+                    <p>Concatenation is probably the most common string operation. To concatenate strings, you use <span>+</span> operator. Similarly, the <span>*</span> operator can be used to repeat the string for a given number of times.</p>
+                    <code>str1 = 'Hello '
+                        str2 ='World!'
+                        
+                        # Output: Hello World!
+                        print(str1 + str2)
+                        
+                        # Hello Hello Hello
+                        print(str1 * 3)
+                    </code>
+                </div>
+            </section>
+
+            <section class="main-section" id="if...else_statement">
+                <header>
+                    <h2>if...else Statement</h2>
+                </header>
+                <div class="content">
+                    <p>The <span>if...else</span> statement is used if you want perform different action (run different code) on different condition. For example:</p>
+                    <code>num = -1
+
+                        if num > 0:
+                            print("Positive number")
+                        elif num == 0:
+                            print("Zero")
+                        else:
+                            print("Negative number")
+                            
+                        # Output: Negative number
+                    </code>
+                    <p>There can be zero or more <span>elif</span> parts, and the <span>else</span> part is optional.</p>
+                    <p>Most programming languages use <span>{}</span> to specify the block of code. Python uses indentation.</p>
+                    <p>A code block starts with indentation and ends with the first unindented line. The amount of indentation is up to you, but it must be consistent throughout that block.</p>
+                    <p>Generally, four whitespace is used for indentation and is preferred over tabs.</p>
+                    <p>Let's try another example:</p>
+                    <code>if False:
+                        print("I am inside the body of if.")
+                        print("I am also inside the body of if.")
+                      print("I am outside the body of if")
+                      
+                      # Output: I am outside the body of if.
+                    </code>
+                    <p>Before you move on to next section, we recommend you to check <span>comparison operator</span> and <span>logical operator</span>.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="while_loop">
+                <header>
+                    <h2>while Loop</h2>
+                </header>
+                <div class="content">
+                    <p>Like most programming languages, while loop is used to iterate over a block of code as long as the test expression (condition) is true. Here is an example to find the sum of natural numbers:</p>
+                    <code>n = 100
+
+                        # initialize sum and counter
+                        sum = 0
+                        i = 1
+                        
+                        while i &lt;= n:
+                            sum = sum + i
+                            i = i+1    # update counter
+                        
+                        print("The sum is", sum)
+                        
+                        # Output: The sum is 5050
+                    </code>
+                    <p>
+                        In Python, while loop can have optional <span>else</span> block that is executed if the condition in the <span>while</span> loop evaluates to <span>False</span>. However, if the loop is terminated with <span>break</span> statement, Python interpreter ignores the <span>else</span> block.
+                    </p>
+                </div>
+            </section>
+
+            <section class="main-section" id="for_loop">
+                <header>
+                    <h2>for Loop</h2>
+                </header>
+                <div class="content">
+                    <p>In Python, <span>for</span> loop is used to iterate over a sequence (list, tuple, string) or other iterable objects. Iterating over a sequence is called traversal.</p>
+                    <p>Here's an example to find the sum of all numbers stored in a list.</p>
+                    <code>numbers = [6, 5, 3, 8, 4, 2]
+
+                        sum = 0
+                        
+                        # iterate over the list
+                        for val in numbers:
+                          sum = sum+val
+                        
+                        print("The sum is", sum) # Output: The sum is 28
+                    </code>
+                    <p>Notice the use of <span>in</span> operator in the above example. The <span>in</span> operator returns <span>True</span> if value/variable is found in the sequence.</p>
+                    <p>In Python, <span>for</span>oop can have optional <span>else</span> block. The else part is executed if the items in the sequence used in <span>for</span> loop exhausts. However, if the loop is terminated with <span>break</span> statement, Python interpreter ignores the <span>else</span> block.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="creating_objects">
+                <header>
+                    <h2>Creating Objects</h2>
+                </header>
+                <div class="content">
+                    <p>You can also create objects of the class yourself.</p>
+                    <code>class MyClass:
+                        "This is my class"
+                        a = 10
+                        def func(self):
+                          print('Hello')
+                      
+                      obj1 = MyClass()
+                      print(obj1.a)        # Output: 10
+                       
+                      obj2 = MyClass()
+                      print(obj1.a + 5)    # Output: 15
+                    </code>
+                </div>
+            </section>
+
+            <section class="main-section" id="reference">
+                <header>
+                    <h2>Reference</h2>
+                </header>
+                <div class="content">
+                    All the documentation in this page is taken from <a target="_blank" href="https://www.programiz.com/python-programming/tutorial">Programiz</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+</html>

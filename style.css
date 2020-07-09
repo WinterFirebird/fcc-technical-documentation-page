@@ -1,0 +1,186 @@
+@font-face {
+    font-family:"Open Sans";
+    src:url(fonts/Open_Sans/OpenSans-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family:"Open Sans";
+    src:url(fonts/Open_Sans/OpenSans-Regular.ttf);
+    font-weight: 400;
+}
+
+
+:root {
+    --default-color:#4d4e53;
+    --emph-color:black;
+    --bg-color:#fff;
+    --font-family:'Open Sans', sans-serif;
+}
+
+
+* {
+    box-sizing:border-box;
+}
+
+body {
+    margin:0;
+    font-family:var(--font-family);
+    background-color:var(--bg-color);
+    color:var(--default-color);
+    line-height:1.5;
+    font-size:0.95rem;
+}
+
+h1 {
+    font-size:1.5rem;
+    font-weight:400;
+    color:var(--emph-color);
+}
+
+h2 {
+    font-size:1.8rem;
+    font-weight:400;
+    color:var(--emph-color)
+}
+
+h3 {
+    font-size:1.3rem;
+    font-weight:400;
+    color:var(--emph-color);
+}
+
+/* The main wrapper that contains the whole page */
+
+#main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100vh;
+}
+
+/* The navbar wrapper, main navigation of the page */
+
+#main #navbar-wrapper {
+    border-right:3px solid darkgray;
+    grid-column: 1;
+}
+
+#main #navbar-wrapper #navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content 1fr;
+    max-height:100%;
+}
+
+#main #navbar-wrapper #navbar > * {
+    margin:0;
+    padding:0;
+}
+
+#main #navbar-wrapper #navbar header {
+    padding-left:14px;
+    padding-right: 8px;
+    /**/
+    text-align:center;
+}
+
+
+#main #navbar-wrapper #navbar ul {
+    list-style: none;
+    overflow: auto;
+    margin-bottom:20px;
+}
+
+#main #navbar-wrapper #navbar ul li {
+    border-top:1px solid gray;
+    padding:10px 20px 10px 30px;
+}
+
+#main #navbar-wrapper #navbar ul li a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/* The main content of the page */
+
+#main #main-doc {
+    grid-column: 2;
+    overflow:auto;
+}
+
+#main #main-doc .main-section {
+    margin:40px;
+}
+
+#main #main-doc .main-section header {
+    
+}
+
+#main #main-doc .main-section header h2 {
+
+} 
+
+#main #main-doc .main-section .content {
+    margin-left:10px;
+}
+
+#main #main-doc .main-section .content p {
+
+}
+
+#main #main-doc .main-section .content p.output {
+    white-space:pre-line;
+    /**/
+    background-color: #eee;
+    margin-left:10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+#main #main-doc .main-section .content p > span {
+    font-weight: bold;
+}
+
+#main #main-doc .main-section .content code {
+    white-space:pre-line;
+    /**/
+    border-radius: 4px;
+    background-color: darkgray;
+    color:white;
+    /**/
+    display: block;
+    margin-left:10px;
+    margin-bottom:1px;
+    padding: 4px;
+}
+
+
+
+
+
+
+@media screen and (max-width:960px) {
+    #main {
+        width: 100%;
+        height: auto;
+        /**/
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px auto;
+    }
+
+    #main #navbar-wrapper {
+        border-right:none;
+        /**/
+        grid-column:1;
+        grid-row:1;
+    }
+
+    #main #navbar-wrapper #navbar ul {
+        border:2px solid darkgray;
+    }
+
+    #main #main-doc {
+        grid-column:1;
+        grid-row:2;
+    }
+}
